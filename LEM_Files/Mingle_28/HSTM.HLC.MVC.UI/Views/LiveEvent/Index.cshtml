@@ -31,6 +31,13 @@
             removeAllEventDefinedFilters();
             removeAllUserAdminFilters();
             removeAllAddressFilters();
-            getEventsForRegistration();
         }
 
+
+
+                $("#chkIncludeOutsideEvents").change(function() {
+                    if($("#chkIncludeOutsideEvents").is(":checked")) {
+                        removeAllFilters();
+                    }
+                    getEventsForRegistration();
+                });
