@@ -1,0 +1,36 @@
+﻿        function removeAllBuildingFilters() {
+            $.each(buildingIds, function() {
+                $("div#divFilters > a.tag#buildingTag" + this).remove();
+            });
+            buildingIds.length = 0;
+        }
+
+        function removeAllEventDefinedFilters() {
+            $.each(eventSeriesAddress, function () {
+                $("div#divFilters > a.tag#edrTag" + hashCode(this.EventResourceLocationName)).remove();
+            });
+            eventSeriesAddress.length = 0;
+        }
+
+        function removeAllUserAdminFilters() {
+            $.each(peopleFilter, function () {
+                $("div#divFilters > a.tag#eventUserAdminTag" + this.UserAdminId).remove();
+            });
+            peopleFilter.length = 0;
+        }
+
+        function removeAllAddressFilters() {
+            $.each(addressFilters, function () {
+                $("div#divFilters > a.tag#addressTag" + this.Index).remove();
+            });
+            addressFilters.length = 0;
+        }
+
+        function removeAllFilters() {
+            removeAllBuildingFilters();
+            removeAllEventDefinedFilters();
+            removeAllUserAdminFilters();
+            removeAllAddressFilters();
+            getEventsForRegistration();
+        }
+
