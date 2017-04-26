@@ -1,0 +1,30 @@
+﻿<a id="lnkOpenCrossOrganizationHelpModal" href="#modal-global-event" data-toggle="modal"> <i class="fa fa-fw fa-info-circle"></i>  </a>
+
+var registrationAccessSelectList = new List<SelectListItem>
+    {
+    new SelectListItem
+    {
+    Text = UIResource.AdminOnly,
+    Value = ((int)EventRegistrationAccessOption.Admin).ToString(),
+    },
+    new SelectListItem
+    {
+    Text = UIResource.SelfRegistrationAndAdmin,
+    Value = ((int)EventRegistrationAccessOption.AdminSelf).ToString()
+    },
+    new SelectListItem
+    {
+    Text = UIResource.NotOpenForRegistration,
+    Value = ((int)EventRegistrationAccessOption.Closed).ToString(),
+    }
+    };
+
+@Html.Raw(UIResource.CrossOrganizationHelpModalBody)
+
+var uiResources = {
+    OpenToHostOrganization: '@UIResource.OpenToHostOrganization',
+    Remove: '@UIResource.Remove',
+    SelfRegistrationAndAdmin: '@UIResource.SelfRegistrationAndAdmin',
+    SelfRegistrationAndAdminOfHostingOrganization: '@UIResource.SelfRegistrationAndAdminOfHostingOrganization'
+};
+

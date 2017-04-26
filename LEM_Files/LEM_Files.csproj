@@ -90,8 +90,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Mingle_34\HSTM.Platform.Web\Scripts\EventManagement\eventsettings.js" />
+    <Content Include="Mingle_34\HSTM.Platform.Web\UIResource.syr-SY.resx.txt" />
     <Content Include="packages.config" />
     <Content Include="Mingle_28\HSTM.HLC.MVC.UI\Views\LiveEvent\Index.cshtml" />
+    <Content Include="Mingle_34\HSTM.Platform.Web\Views\EventManagement\EventSettings.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -106,6 +109,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="Mingle_34\HSTM.Platform.Web\UIResource.resx.txt" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

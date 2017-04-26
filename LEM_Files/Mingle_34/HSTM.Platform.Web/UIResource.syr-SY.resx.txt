@@ -1,0 +1,13 @@
+﻿  <data name="SelfRegistrationAndAdminOfHostingOrganization" xml:space="preserve">
+    <value>[[Self-Registration and Admin of Hosting Organization]]</value>
+  </data>
+  <data name="AdminOnly" xml:space="preserve">
+    <value>[[Admin Only]]</value>
+  </data>
+  <data name="SelfRegistrationAndAdmin" xml:space="preserve">
+    <value>[[Self-Registration and Admin]]</value>
+  </data>
+
+  <data name="CrossOrganizationHelpModalBody" xml:space="preserve">
+    <value>[[&lt;p&gt;To make the event accessible by all HealthStream Customers, set Availability to &lt;b&gt;Cross-Organization&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Registration Access&lt;/b&gt; for these events is limited to self-registration and admin of the hosting organization. Meaning, only admins from your organization can register students from their organization. Students from any organization can register themselves.&lt;/p&gt;]]</value>
+  </data>
