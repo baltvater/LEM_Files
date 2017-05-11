@@ -92,9 +92,13 @@
   <ItemGroup>
     <Content Include="Mingle_34\HSTM.Platform.Web\Scripts\EventManagement\eventsettings.js" />
     <Content Include="Mingle_34\HSTM.Platform.Web\UIResource.syr-SY.resx.txt" />
+    <Content Include="Mingle_94\HSTM.HLC.MVC.UI\Resource.resx.txt" />
+    <Content Include="Mingle_94\HSTM.HLC.MVC.UI\Resource.syr-SY.resx.txt" />
     <Content Include="packages.config" />
     <Content Include="Mingle_28\HSTM.HLC.MVC.UI\Views\LiveEvent\Index.cshtml" />
     <Content Include="Mingle_34\HSTM.Platform.Web\Views\EventManagement\EventSettings.cshtml" />
+    <Content Include="Mingle_94\HSTM.HLC.MVC.UI\Views\LiveEvent\Index.cshtml" />
+    <Content Include="Mingle_94\HSTM.HLC.MVC.UI\Views\LiveEvent\_EventSearchFilters.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

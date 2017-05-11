@@ -1,0 +1,39 @@
+﻿@* ******* NEW CODE ******* *@
+                $("#chkAvailableEventsOnly").on("click", function() {
+                    var checked = $(this).is(":checked");
+
+                    $("#divEvents div.slat a.btn[disabled='disabled']").each(function() {
+                        var slat = $(this).closest(".slat");
+                        if(checked) {
+                            slat.hide();
+                        }
+                        else {
+                            slat.show();
+                        }
+                    });
+                });
+@* ******* NEW CODE ******* *@
+
+
+
+
+
+@* ******* EXISTING CODE ******* *@
+getEventsForRegistration();
+            }
+
+        });
+
+    </script>
+    @if (canBeDropped)
+    {
+        @Html.Partial(WebUI.Shared.Views._ShowModalDialogOnClickScript,
+                new ShowModalDialogOnClickModel
+                {
+                    ModalDialogId = LiveEventRegistrationResultViewModel.LiveEventInterruptionModalId,
+                    TriggerElementId = dropButtonId
+                })
+    }
+
+}
+@* ******* EXISTING CODE ******* *@

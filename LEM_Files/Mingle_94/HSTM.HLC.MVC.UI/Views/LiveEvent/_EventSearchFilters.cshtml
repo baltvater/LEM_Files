@@ -1,0 +1,45 @@
+﻿@* ******* EXISTING CODE ******* *@
+@if (Model.CanStudentRegisterForGlobalEvents)
+            {
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <strong>@Resource.CrossOrganizationSearch</strong>
+            </h4>
+        </div>
+        <div aria-labelledby="headingTwo">
+            <div class="panel-body">
+                <input type="checkbox" id="chkIncludeOutsideEvents" />
+                @Resource.IncludeEventsOutsideMyOrganization
+            </div>
+        </div>
+    </div>
+}
+@* ******* EXISTING CODE ******* *@
+
+
+
+@* ******* NEW CODE ******* *@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <strong>@Resource.AvailableEventsOnly</strong>
+        </h4>
+    </div>
+    <div aria-labelledby="headingTwo">
+        <div class="panel-body">
+            <input type="checkbox" id="chkAvailableEventsOnly" />
+            @Resource.ShowOnlyEventsThatICanRegisterFor
+        </div>
+    </div>
+</div>
+@* ******* NEW CODE ******* *@
+
+
+
+@* ******* EXISTING CODE ******* *@
+<div id="orgSpecificFilters">
+.
+.
+.
+@* ******* EXISTING CODE ******* *@
