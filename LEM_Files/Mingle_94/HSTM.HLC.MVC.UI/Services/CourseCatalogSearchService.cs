@@ -1,0 +1,2 @@
+﻿IncludeOverlapingDates = true,
+ShowAvailableEventsOnly = false
